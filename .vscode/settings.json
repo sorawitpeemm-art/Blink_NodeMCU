@@ -1,0 +1,11 @@
+{
+  "emeraldwalk.runonsave": {
+    "commands": [
+      {
+        "match": "\\\\src\\\\.*\\.(cpp|c|h|hpp)$|platformio\\.ini$",
+        "isShellCommand": true,
+        "cmd": "\"${env:USERPROFILE}\\.platformio\\penv\\Scripts\\platformio.exe\" run --target upload"
+      }
+    ]
+  }
+}
